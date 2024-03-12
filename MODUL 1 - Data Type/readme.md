@@ -170,7 +170,7 @@ int main() {
 }
 ```
 #### Output:
-![unguided1](https://github.com/agungibr/data-structure-assignment/assets/91455543/6ec54f76-23fc-4eb5-a3ba-ffa5a52001a6)
+![unguided1](https://github.com/agungibr/data-structure-assignment/assets/91455543/e58689ad-1c58-4209-8d32-dc9c1e7d77a5)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
