@@ -1,23 +1,60 @@
-#include <iostream> //input preprocessor directive
-using namespace std; //supaya tidak perlu menggunakan std:: disetiap input object or function
+#include <iostream>
+using namespace std;
 
-int main(void) //gunakan void supaya tidak perlu menggunakan return 0 pada akhir code
-{
-	int panjang, lebar; //mendeklarasikan variabel panjang dan lebar menggunakan tipe data integer
+char menu;
+float fahrenheit,kelvin,one;
 
-	cout << "Masukkan panjang : "; //fungsi untuk memasukan panjang persegi panjang
-	cin >> panjang; //fungsi untuk menampilkan hasil inputan panjang oleh user
-	cout << "Masukkan lebar : "; //fungsi untuk memasukan lebar persegi panjang
-	cin >> lebar; //fungsi untuk menampilkan hasil inputan lebar pesergi panjang
-
-	float luas = panjang * lebar; //membuat variable dengan nama luas yang dihasilkan oleh perkalian antara panjang dikalikan lebar persegi panjang dengan type data float
-
-	cout << "Luas persegi panjang adalah " << luas << endl; //fungsi untuk menampilkan luas persegi panjang dengan type data float
+void choice() {
+	cout <<"\n=====Temperature Converter Celsius====="<< endl;
+	cout << "A. Celsius to Fahrenheit" << endl;
+	cout << "B. Celsius to Kelvin" << endl;
+	cout << "0. Exit" << endl;
+	cout << "Enter your choice: ";
+	cin >> menu;
 }
 
-/* 
-NOTE :
-Kesimpulan dari data pritimive yang merupakan salahsatu type data yang tersedia pada bahasa C++ dan disediakan oleh bahasa pemrograman. 
-Ada beberapa contoh type data primitive yaitu seperti int, float, char, boolean, dll. Type data primitive ini juga mendukung operasi dasar
-seperti penjumlahan, pengurangan, perkalian dan pembagian. Pemahaman tipe data primitif penting dalam memahami konsep struktur data yang lebih kompleks.
-*/
+float fahr() {
+	cout << "Input temperature in Celsius: ";
+	cin >> one;
+
+	fahrenheit = (1.8 * one) + 32.0;
+
+	cout << "Temperature in degree Fahrenheit: " << fahrenheit << " F" << endl;
+	return fahrenheit = (1.8 * one) + 32.0;
+}
+
+float kelv() {
+	cout << "Input temperature in Celsius: ";
+	cin >> one;
+
+	kelvin = 273.15 + one;
+
+	cout << "Temperature in degree Kelvin: " << kelvin << " K" << endl;
+	return kelvin = 273.15 + one;
+}
+
+int main() {
+    do {
+        choice();
+        switch (menu) {
+            case 'A':
+            case 'a':
+                fahr();
+                break;
+
+            case 'B':
+            case 'b':
+                kelv();
+                break;
+                
+            case '0':
+                cout << "Thank you for using this program. Goodbye!" << endl;
+                break;
+
+            default:
+                cout << "Error, operator is not correct";
+                return 0;
+        }
+    } while (menu != '0');
+    return 0;
+}
