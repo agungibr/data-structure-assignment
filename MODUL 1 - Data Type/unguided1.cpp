@@ -1,10 +1,10 @@
-#include <iostream>
-using namespace std;
+#include <iostream> //input preprocessor directive
+using namespace std; //supaya tidak perlu menggunakan std:: disetiap input object or function
 
-char menu;
-float fahrenheit,kelvin,one;
+char menu; //mendeklarasikan variabel menu dengan type data character
+float fahrenheit,kelvin,one; //mendeklarasikan variabel dengan type data float
 
-void choice() {
+void choice() { //variable choice untuk memilih menu yang ingin digunakan
 	cout <<"\n=====Temperature Converter Celsius====="<< endl;
 	cout << "A. Celsius to Fahrenheit" << endl;
 	cout << "B. Celsius to Kelvin" << endl;
@@ -13,7 +13,7 @@ void choice() {
 	cin >> menu;
 }
 
-float fahr() {
+float fahr() { //variable untuk menghitung celcius ke fahrenheit dengan type data float
 	cout << "Input temperature in Celsius: ";
 	cin >> one;
 
@@ -23,7 +23,7 @@ float fahr() {
 	return fahrenheit = (1.8 * one) + 32.0;
 }
 
-float kelv() {
+float kelv() { //variable untuk menghitung celcius ke kelvin dengan type data float
 	cout << "Input temperature in Celsius: ";
 	cin >> one;
 
@@ -33,9 +33,9 @@ float kelv() {
 	return kelvin = 273.15 + one;
 }
 
-int main() {
-    do {
-        choice();
+int main() { //menu utama
+    do { //menggunakan looping do - while
+        choice(); //memanggil variable choice
         switch (menu) {
             case 'A':
             case 'a':
@@ -55,6 +55,6 @@ int main() {
                 cout << "Error, operator is not correct";
                 return 0;
         }
-    } while (menu != '0');
+    } while (menu != '0'); //jika user menginputkan angka 0 maka program otomatis berhenti
     return 0;
 }
