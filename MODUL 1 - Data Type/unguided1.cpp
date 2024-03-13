@@ -17,7 +17,7 @@ float fahr() { //variable untuk menghitung celcius ke fahrenheit dengan type dat
 	cout << "Input temperature in Celsius: ";
 	cin >> one;
 
-	fahrenheit = (1.8 * one) + 32.0;
+	fahrenheit = (1.8 * one) + 32.0; //rumus menghitung celsius ke fahrenheit
 
 	cout << "Temperature in degree Fahrenheit: " << fahrenheit << " F" << endl;
 	return fahrenheit = (1.8 * one) + 32.0;
@@ -27,7 +27,7 @@ float kelv() { //variable untuk menghitung celcius ke kelvin dengan type data fl
 	cout << "Input temperature in Celsius: ";
 	cin >> one;
 
-	kelvin = 273.15 + one;
+	kelvin = 273.15 + one; //rumus menghitung celsius ke kelvin
 
 	cout << "Temperature in degree Kelvin: " << kelvin << " K" << endl;
 	return kelvin = 273.15 + one;
@@ -37,21 +37,21 @@ int main() { //menu utama
     do { //menggunakan looping do - while
         choice(); //memanggil variable choice
         switch (menu) {
-            case 'A':
+            case 'A': //jika memilih A/a maka akan menghitung fahrenheit
             case 'a':
                 fahr();
                 break;
 
-            case 'B':
+            case 'B': //jika memilih B/b maka akan menghitung kelvin
             case 'b':
                 kelv();
                 break;
                 
-            case '0':
+            case '0': //jika ingin keluar dari looping maka bisa menginputkan angka 0
                 cout << "Thank you for using this program. Goodbye!" << endl;
                 break;
 
-            default:
+            default: //jika menginputkan angka selain diatas maka akan muncul message error seperti dibawah ini
                 cout << "Error, operator is not correct";
                 return 0;
         }
