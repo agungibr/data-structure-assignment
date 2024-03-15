@@ -251,6 +251,38 @@ int main() { //program utama atau main program
 #### Output:
 ![unguided2](https://github.com/agungibr/data-structure-assignment/assets/91455543/7845a93c-a838-4486-9e2b-aadf9912a114)
 
+Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
+
+```C++
+#include <iostream> //input preprocessor directive
+#include <map> //input map
+using namespace std; //supaya tidak perlu menggunakan std:: disetiap input object or function
+
+int main() { //main program 
+    map <int, string> character; //membuat map dengan key int dan bertipe data string
+
+    //menginputkan karakter
+    character[0] = "Spongebob Squarepants";
+    character[1] = "Patrick Star";
+    character[2] = "Sandy Cheeks";
+    character[3] = "Squidward Tentacles";
+    character[4] = "Mr. Krabs";
+
+    //menampilkan karakter yang sudah dibuat
+    cout << "==========CHARACTER LIST==========" << endl;
+    cout << "Karakter pertama : " << character[0] << endl;
+    cout << "Karakter kedua : " << character[1] << endl;
+    cout << "Karakter ketiga : " << character[2] << endl;
+    cout << "Karakter keempat : " << character[3] << endl;
+    cout << "Karakter kelima : " << character[4] << endl;
+
+    return 0;
+}
+```
+#### Output:
+![unguided3](https://github.com/agungibr/data-structure-assignment/assets/91455543/b1677220-7371-4f6f-ba3c-866843eb5d0c)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
