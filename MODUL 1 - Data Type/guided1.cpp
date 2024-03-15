@@ -9,9 +9,11 @@ int main()
 	float num1, num2;
 
 	//It allows user to enter operator i.e. +, -, *, /
+	cout << "Enter a Operator: " << endl;
 	cin >> op;
 
 	//It allows user to enter the operations
+	cout << "Enter Number 1 & 2: " << endl;
 	cin >> num1 >> num2;
 
 	//Switch statement begins
