@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 //struct
 struct Mahasiswa
@@ -22,13 +23,14 @@ int main()
 	mhs2.age = 23;
 
 	//mencetak isi struct
-	printf("## Mahasiswa 1 ##\n");
-	printf("Nama: %s\n", mhs1.name);
-	printf("Alamat: %s\n", mhs1.address);
-	printf("Umur: %d\n", mhs1.age);
-	printf("## Mahasiswa 2 ##\n");
-	printf("Nama: %s\n", mhs2.name);
-	printf("Alamat: %s\n", mhs2.address);
-	printf("Umur: %d\n", mhs1.age);
+	cout << "-----Mahasiswa 1-----" << endl;
+	cout << "Nama: " << mhs1.name <<endl;
+	cout << "Alamat: " << mhs1.address <<endl;
+	cout << "Umur: " << mhs1.age <<endl;
+	cout << "-----Mahasiswa 2-----" << endl;
+	cout << "Nama: " << mhs2.name <<endl;
+	cout << "Alamat: " << mhs2.address <<endl;
+	cout << "Umur: " << mhs2.age <<endl;
+
 	return 0;
 }
