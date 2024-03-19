@@ -14,11 +14,12 @@
 Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk menampung informasi atau data sementara. Dalam C++, terdapat 3 tipe data yang dijelaskan yaitu tipe data primitif, tipe data abstrak, dan tipe data koleksi.
 
 ### 1. Tipe Data Primitif
-Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrograman,compiler dan sistem operasinya. Contoh tipe data primitif adalah :
-    - Int : adalah tipe data yang digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan sebagainya.
-    - Float : tipe data yang digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan sebagainya.
-    - Char : berfungsi untuk menyimpan data berupa sebuah huruf. Biasanya digunakan untuk simbol seperti A, B, C dan seterusnya.
-    - Boolean : tipe data ini digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai yaitu true dan false.
+Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrograman, compiler dan sistem operasinya. Contoh tipe data primitif adalah :
+
+- Int : adalah tipe data yang digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan sebagainya.
+- Float : tipe data yang digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan sebagainya.
+- Char : berfungsi untuk menyimpan data berupa sebuah huruf. Biasanya digunakan untuk simbol seperti A, B, C dan seterusnya.
+- Boolean : tipe data ini digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai yaitu true dan false.
 
 ### 2. Tipe Data Abstrak
 ### 3. Tipe Data Koleksi
@@ -119,7 +120,7 @@ int main()
     return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk struct mahasiswa dan yang berisikan nama dan address yang bertipe data character. `const` berfungsi untuk menentukan bahwa object atau variable tidak dapat dimodifikasi. Lalu terdapat age yang bertipe data integer. Selanjutnya kita mengisikan data ke dalam struct mahasiswa. Pada main program, kita akan mengisi `mhs1` dan `mhs2` dengan cara memanggil struct yang sudah kita buat, lalu kita tinggal mengisinya. Setelah itu kita menampilkan struct yang sudah diisi dengan menggunakan fungsi `cout`.
 
 ### 3. Tipe Data Koleksi
 
